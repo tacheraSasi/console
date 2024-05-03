@@ -1,0 +1,32 @@
+.sense{
+    margin:1rem
+}
+.sense .container{
+    display:flex;
+    gap:1rem;
+    margin:1rem auto;
+    flex-wrap: wrap;
+
+}
+.sense .container .pdf{
+    background-color: #201f1f;
+    border:solid 1px #424242;
+    border-radius: 10px;
+    width: 200px;
+    height: 100px;
+    padding:8px;
+    cursor: pointer;
+    position: relative;
+}
+.sense .container .pdf .name{
+    margin:auto;
+    font-size:larger
+}
+.sense .container .pdf .open-pdf{
+    background-color: #993f33;
+    margin:1rem auto;
+    padding: 10px;
+    position: absolute;
+    bottom: 0;
+    width: 90%;
+}

@@ -1,0 +1,101 @@
+.login{
+display: flex;
+height: 100vh;
+background-color: #28302d;
+justify-content: center;
+align-items: center;
+    .card{
+        display: flex;
+        background-color: #201f1f;
+        width: 50%;
+        border-radius:10px;
+        box-shadow:0 1px 15px 0
+         rgba(0, 0, 0, 0.71);
+        overflow: hidden;
+
+        @media (max-width: 500px) {
+            width: 90%;
+          }
+        .left{
+            flex: 1;
+            background:linear-gradient(rgba(59, 177, 108, 0.4), 
+            rgba(11, 83, 96, 0.586)), 
+            url("/login.jpg")
+            center;
+            background-size: cover;
+            color:white;
+            height: 500px;
+            padding: 50px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+
+            @media (max-width: 500px) {
+                display: none; 
+              }
+        
+            h1{
+                font-size: 60px;
+                line-height: 70px;
+            }
+            
+            button{
+                width: 50%;
+                color:#33995d;
+                padding:10px;
+                border:none;
+                border-radius: 6px;
+                font-weight: bold;
+                cursor: pointer;
+            } button:hover{
+                transform: scale(.968);
+            }
+        
+        }
+        .right{
+            flex: 1; 
+            padding: 50px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            color: #888;
+            
+            @media (max-width: 500px) {
+                width: 100%; 
+              }
+            form{
+            display: flex;
+            gap: 30px;
+            flex-direction: column;
+                input{
+                    color:#fff;
+                    background-color: transparent;
+                    border:none;
+                    outline:none;
+                    border-bottom: 1px solid lightgreen;
+                    padding:1rem;
+                    transition:all ease-in-out .7s;
+
+                    &:focus{
+                        border:1px solid lightgreen;
+                        border-radius:1rem;
+                    }
+                }
+                button{
+                    width: 50%;
+                    background-color:#33995d ;
+                    color:#fff;
+                    padding:10px;
+                    border:none;
+                    border-radius: 6px;
+                    font-weight: bold;
+                    cursor: pointer;
+
+                } button:hover{
+                    transform: scale(.968);
+                }
+            }
+
+        }
+    }
+}

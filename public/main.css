@@ -1,0 +1,59 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+*::-webkit-scrollbar {
+  width: 5px;
+  height: 8px;
+  border-radius: 1rem;
+  background-color: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #aacfb2;
+  border-radius: 1rem;
+}
+
+body {
+  background-color: #303131;
+  color: #fff;
+}
+
+
+.MuiList-root {
+  color: white;
+  background-color: #201f1f;
+  border:1px solid gray;
+  
+}
+.ekilie-alert{
+  background-color: #201f1f;
+  border:solid 1px #424242;
+  border-radius: 10px;
+  width: 300px;
+  padding:1rem 8px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  font-size: 15px;
+  z-index:99;
+  transition: ease-in-out 1s;
+}
+.ekilie-alert:active{
+  transform: scale(1.2);
+}
+
+.ekilie-alert span{
+  border:none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 500px) {
+  .rightbar, .clock {
+    display: none;
+  }
+}
+

@@ -1,0 +1,31 @@
+.main-loader{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.loader {
+    border: 2px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 5px solid rgb(110, 110, 170);
+    border-right: 5px solid rgb(179, 219, 179);
+    border-bottom: 6px solid rgb(158, 71, 71);
+    border-left: 3px solid rgb(231, 134, 194);
+    width: 23px;
+    height: 20px;
+    -webkit-animation: spin 1.5s linear infinite;
+    animation: spin 1.5s linear infinite;
+}
+.loader-text{
+    margin:auto 3px;
+}
+  
+  @-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }

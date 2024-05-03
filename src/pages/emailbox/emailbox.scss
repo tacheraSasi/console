@@ -1,0 +1,71 @@
+.Emailbox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin:1rem;
+    .main-container{
+        padding:1rem;
+        background-color: #201f1f;
+        border-radius: 1rem;
+        width: 100%;
+        height: 550px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        form{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            gap: 2rem;
+
+            p{
+                font-weight: bold;
+            }
+            span{
+                color:#b8b6b6;
+                background-color: #38a76683;
+                border:#33995d solid 1px;
+                border-radius: 12px;
+                padding: 3px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                font-size: 18px;
+                span{
+                    border:none;
+                    background-color: transparent;
+                    cursor: pointer;
+                }
+            }
+            textarea,input{
+                background-color: #2c2b2b;
+                border:2px solid transparent;
+                border-radius: 10px;
+                padding:1rem;
+                font-size: large;
+                color:#fff;
+                outline: none;
+                transition: all ease-in-out .6s;
+            }
+            textarea:focus,input:focus{
+                border:2px solid #33995d;
+
+            }
+            button{
+                width: 100%;
+                background-color:#33995d ;
+                color:#fff;
+                padding:10px;
+                border:none;
+                border-radius: 6px;
+                font-weight: bold;
+                cursor: pointer;
+
+            } button:hover{
+                transform: scale(.968);
+            }
+        }
+
+    }
+}
