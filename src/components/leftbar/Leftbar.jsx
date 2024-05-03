@@ -56,15 +56,12 @@ const Leftbar = ({setIsLeftbarOpened}) => {
           </div>
         </div>
         <div className="bottom">
-        <Link 
-          style={{textDecoration:'none',color:'orangered'}} to="/" 
-          onClick={()=>{setOpenSetting(true)}}>
+        
           <div className='option'title='settings' id={isActive=='Home'?'active':''}>
             <Tooltip text="settings">
               <RiSettings6Fill className="icon" size={25} color='#ffff'/>
             </Tooltip>
           </div>
-        </Link>
         </div>
       </div>
     </div>
