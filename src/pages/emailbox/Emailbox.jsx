@@ -22,7 +22,7 @@ const Emailbox = () => {
       setIsSending(true)
 
       const response = await axios.post(
-        "http://console.ekilie.com/api/email-sender.php",
+        "https://console.ekilie.com/api/email-sender.php",
         {
           emailText: message,
           emailSubject: subject
